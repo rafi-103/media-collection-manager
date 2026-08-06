@@ -16,6 +16,17 @@ class ItemBase(BaseModel):
 class ItemCreate(ItemBase):
     pass
 
+class ItemUpdate(BaseModel):
+    title: Optional[str] = None
+    type: Optional[str] = None
+    creator: Optional[str] = None
+    genre: Optional[str] = None
+    status: Optional[str] = None
+    rating: Optional[int] = None
+    platform: Optional[str] = None
+    is_favorite: Optional[bool] = None
+    notes: Optional[str] = None
+
 class ItemResponse(ItemBase):
     id: int
     created_at: datetime
