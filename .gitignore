@@ -3,4 +3,22 @@ frontend/node_modules/
 frontend/node_modules/.cache/
 frontend/node_modules/.eslintcache
 
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
+# Virtual environment
+venv/
+backend/venv/
+
+# Environment variables (contains passwords)
+.env
+backend/.env
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
