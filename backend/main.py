@@ -3,7 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api import routes
 from app.core.database import engine, Base
 
-# Create database tables
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Media Collection API", version="0.1.0")
@@ -20,7 +19,7 @@ app.include_router(routes.router)
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the Media Collection API! 🚀"}
+    return {"message": "Welcome to the Media Collection API!"}
 
 @app.get("/api/health")
 def health_check():

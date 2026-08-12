@@ -1,0 +1,6 @@
+# Ignore node modules and their cache files
+frontend/node_modules/
+frontend/node_modules/.cache/
+frontend/node_modules/.eslintcache
+
+
